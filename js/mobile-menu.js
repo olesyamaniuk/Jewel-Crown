@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
   const menuBtnRef = document.querySelector("[data-menu-button]");
-  const navListRef = document.querySelector(".w-n-navigation-list");
-  const headerRef = document.querySelector(".w-n-header");
-  const navigationRef = document.querySelector(".w-n-navigation");
+  const navListRef = document.querySelector(".w-m-navigation-list");
+  const headerRef = document.querySelector(".w-m-header");
+  const navigationRef = document.querySelector(".w-m-navigation");
 
   menuBtnRef.addEventListener("click", () => {
     menuBtnRef.classList.toggle("is-open");
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function toggleAnswer(element) {
   const answer = element.nextElementSibling;
-  const buttonImg = element.querySelector(".w-n-toggle-button img");
+  const buttonImg = element.querySelector(".w-m-toggle-button img");
 
   if (answer.style.display === "none" || answer.style.display === "") {
     answer.style.display = "block";
